@@ -54,7 +54,7 @@ def sellStopOrder(brokerId:int, accountId:str, subAccountId:str, password:str, t
 def sendSellOrder(qnt:int, price:float):
 ```
 
-### Get Orders
+### Orders
 ```py
 def getOrders(brokerId:str, accountId:str):
 def getOrder(cl_ord_id:str, profit_id:int):
