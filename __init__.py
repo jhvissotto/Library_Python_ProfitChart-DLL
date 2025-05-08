@@ -968,7 +968,7 @@ def sendBuyMarketOrder(brokerId:int, accountId:str, subAccountId:str, password:s
     # brokerId        = int(input('Corretora: '))
     # accountId       = input('Conta: ')
     # subAccountId    = input('SubConta: ')
-    # password     = getpass('Senha de Roteamento: ')
+    # password        = getpass('Senha de Roteamento: ')
 
     # ticker      = input('Ativo: ')
     # exchange    = input('Bolsa: ')
@@ -1007,7 +1007,7 @@ def sendSellMarketOrder(brokerId:int, accountId:str, subAccountId:str, password:
     # brokerId        = int(input('Corretora: '))
     # accountId       = input('Conta: ')
     # subAccountId    = input('SubConta: ')
-    # password     = getpass('Senha de Roteamento: ')
+    # password        = getpass('Senha de Roteamento: ')
 
     # ticker          = input('Ativo: ')
     # exchange        = input('Bolsa: ')
@@ -1045,7 +1045,7 @@ def buyStopOrder(brokerId:int, accountId:str, subAccountId:str, password:str, ti
     # brokerId        = int(input('Corretora: '))
     # accountId       = input('Conta: ')
     # subAccountId    = input('SubConta: ')
-    # password     = getpass('Senha de Roteamento: ')
+    # password        = getpass('Senha de Roteamento: ')
 
     # ticker      = input('Ativo: ')
     # exchange    = input('Bolsa: ')
@@ -1175,7 +1175,7 @@ def changeOrder(brokerId:int, accountId:str, subAccountId:str, cl_ord_id:str, pa
     # accountId       = input('Conta: ')
     # subAccountId    = input('SubConta: ')
     # cl_ord_id       = input('ClOrdID: ')
-    # password     = getpass('Senha de Roteamento: ')
+    # password        = getpass('Senha de Roteamento: ')
     # price           = float(input('Preço: '))
     # amount          = int(input('Quantidade: '))
 
@@ -1260,7 +1260,7 @@ def doZeroPosition(ticker:str, exchange:str, brokerId:int, accountId:int, subAcc
     # brokerId        = int(input('Corretora: '))
     # accountId       = input('Conta: ')
     # subAccountId    = input('SubConta: ')
-    # password     = getpass('Senha de Roteamento: ')
+    # password        = getpass('Senha de Roteamento: ')
     # positionType    = int(input('Tipo da Posisão (1 - DayTrade, 2 - Consolidado): '))
 
     zeroRec             = TConnectorZeroPosition(Version=1, PositionType=positionType, Password=password, Price=(-1.0))
@@ -1270,4 +1270,4 @@ def doZeroPosition(ticker:str, exchange:str, brokerId:int, accountId:int, subAcc
 
     if not evalDllReturn('SendZeroPositionV2', ret):
         print('ZeroOrderID: {0}'.format(ret))
-        return ret[0] 
+        return ret
