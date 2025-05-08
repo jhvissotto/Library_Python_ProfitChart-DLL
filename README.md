@@ -22,6 +22,10 @@
 
 ## Library
 
+- Description: This library was developed to trade in brazilian exchange B3 via ProfitChart homebroker from Neologica  
+- Descrição: Esta biblioteca foi desenvolvida para negociar na bolsa brasileira B3 via homebroker ProfitChart da Neologica  
+
+
 ### Start
 ```py
 def dllStart(key:str, user:str, password:str):
