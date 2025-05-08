@@ -45,7 +45,7 @@ def subscribeTicker(asset:str, bolsa:str):
 def unsubscribeTicker(asset:str, bolsa:str):
 ```
 
-### Send Orders
+### Submit
 ```py
 def sendBuyMarketOrder(brokerId:int, accountId:str, subAccountId:str, password:str, ticker:str, exchange:str, amount:int):
 def sendSellMarketOrder(brokerId:int, accountId:str, subAccountId:str, password:str, ticker:str, exchange:str, amount:int):
